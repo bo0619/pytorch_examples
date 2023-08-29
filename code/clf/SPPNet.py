@@ -94,7 +94,7 @@ class SPPNet(nn.Module):
         return x
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  
-model = SPPNet(num_classes=10).to(device)
+model = SPPNet(num_classes=5).to(device)
 summary(model, (3, 224, 224))
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
@@ -107,7 +107,7 @@ eval_acces = []
 
 # 训练
 print('-----------------------------------------------------Start Training-----------------------------------------------------')
-for epoch in range(25):
+for epoch in range(50):
     train_loss = 0
     train_acc = 0
     model.train()
