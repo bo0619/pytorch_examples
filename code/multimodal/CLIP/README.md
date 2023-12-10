@@ -6,8 +6,7 @@ The dataset we use is [MSCOCO's 2014 Train Images](http://images.cocodataset.org
 
 Here is an example of the dataset:
 
-![img] img:
-
-(https://github.com/bo0619/pytorch_examples/blob/master/code/multimodal/CLIP/COCO_train2014_000000000009.jpg)
+img:
+![img] (https://github.com/bo0619/pytorch_examples/blob/master/code/multimodal/CLIP/COCO_train2014_000000000009.jpg)
 
 txt: Closeup of bins of food that include broccoli and bread.
