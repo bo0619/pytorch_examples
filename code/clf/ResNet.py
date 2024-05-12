@@ -17,7 +17,7 @@ transform = transforms.Compose([
 ])
 
 train_dataset = ImageFolder(root='data/flower_images/train', transform=transform)
-test_dataset = ImageFolder(root='data/flower_images/train', transform=transform)
+test_dataset = ImageFolder(root='data/flower_images/test', transform=transform)
 
 train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=128, shuffle=True)
